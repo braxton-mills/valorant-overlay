@@ -1,0 +1,147 @@
+@font-face {
+	font-family:"valorant";
+	src: url("font/valorant.ttf") format("truetype");
+}
+
+body {
+	background-image: url("img/top.png");
+	background-repeat: no-repeat;
+	background-position-y: top;
+	font-family: "valorant";
+	color: white;
+}
+
+.team-logo {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:41px;
+	width:114px;
+}
+
+.left-team-logo {
+	position: absolute;
+	top: 20px;
+	left: 273px;
+}
+
+.right-team-logo {
+	position: absolute;
+	top: 20px;
+	right: 273px;
+}
+
+.team-name-container-left {
+	background-color: #161A26;
+	height: 25px;
+	width: 470px;
+	position: absolute;
+	top:87px;
+	left:440px;
+	transform: skew(40deg);
+}
+
+.team-name-container-right {
+	background-color: #161A26;
+	height: 25px;
+	width: 470px;
+	position: absolute;
+	top:87px;
+	right:440px;
+	transform: skew(-40deg);
+}
+
+.team-name-left {
+	height: 25px;
+	width: 440px;
+	position: absolute;
+	top:67px;
+	left:455px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.team-name-right {
+	height: 25px;
+	width: 440px;
+	position: absolute;
+	top:67px;
+	right:455px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.box{
+    height:250px;
+    width:15vw;
+	background-color:rgba(22, 26, 38, .6);   
+}
+
+.bottom_right_box {
+	position: absolute;
+	right: 20vw;
+	bottom: 0;
+	transform: translateX(50%);
+}
+
+.bottom_left_box {
+	position: absolute;
+	left: 20vw;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+.player-container{
+	display:flex;
+	justify-content:space-between;
+}
+
+.player-image{
+	background-size: contain;
+	background-repeat: no-repeat;
+	height:50px;
+	width:50px;
+}
+
+.player-name-container{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+	padding-right:.5vw;
+	align-items:center;
+	align-content:center;
+}
+
+.player-name-container-right{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	padding-left:.5vw;
+	align-items:center;
+	align-content:center;
+}
+
+.player-name-container > p{
+	width:100%;
+	text-align:right;
+	margin: 0px 0px 5px 0;
+	font-size: 25px;
+}
+
+.player-name-container-right > p{
+	width:100%;
+	text-align:left;
+	margin: 0px 0px 5px 0;
+	font-size: 25px;
+}
+
+.red-line{
+    width:50px;
+    border-bottom:4px solid rgb(195, 66, 71);
+}
+
+.center_vert {
+	position: absolute;
+	top: 50vh;
+	transform: translateY(-50%);
+}

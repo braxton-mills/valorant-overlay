@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.javalin:javalin:3.7.0'
+    compile "org.slf4j:slf4j-simple:1.8.0-beta4"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.10.1"
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'fill.overlay.backend.WebServer'
+    }
+}
+
+build.dependsOn(shadowJar)
+

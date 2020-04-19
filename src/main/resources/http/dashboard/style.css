@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "font";
+	src: url("font/font.ttf") format("truetype");
+}
+body {
+	background-color: #2f3136;
+	color: white;
+	font-family: "font";
+}
+
+h1{
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: DodgerBlue;
+}
+
+.flex-container > div{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 10vw;
+	height: 10vw;
+	margin: 1px;
+	text-align: center;
+	line-height: 10vw;
+	font-size: 20px;
+}
+
+.flex-container > p{
+	background-color: darkkhaki;
+	width: 50%;
+	margin: 1px;
+	text-align: center;
+	line-height: 4vw;
+	font-size: 15px;
+}
+
+.flex-container > input{
+	width: 50%;
+	height: 3vw;
+	margin: 1px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#team1_name {
+	font-weight: bold;
+}
+
+#team2_name {
+	font-weight: bold;
+}
+
+.team1 {
+	background-color: #59ab95;
+}
+
+.team2 {
+	background-color: #d85d56;
+}
+
+.selected {
+	background-color: red !important;
+}
+
+.neutral{
+	background-color: darkkhaki;
+}

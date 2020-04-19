@@ -1,0 +1,54 @@
+{
+    "team1": {
+        "name": "Team Peter",
+        "icon": "Logo1",
+        "players": [
+            {
+                "name": "alkane",
+                "icon": "Raze"
+            },
+            {
+                "name": "Seb",
+                "icon": "Sova"
+            },
+            {
+                "name": "Macphet",
+                "icon": "Omen"
+            },
+            {
+                "name": "Mathis",
+                "icon": "Raze"
+            },
+            {
+                "name": "Fab",
+                "icon": "Breach"
+            }
+        ]
+    },
+    "team2": {
+        "name": "Team Pro",
+        "icon": "Logo2",
+        "players": [
+            {
+                "name": "XyBr",
+                "icon": "Phoenix"
+            },
+            {
+                "name": "NX",
+                "icon": "Raze"
+            },
+            {
+                "name": "Pro",
+                "icon": "Sage"
+            },
+            {
+                "name": "rhyho",
+                "icon": "Omen"
+            },
+            {
+                "name": "Chiaration",
+                "icon": "Viper"
+            }
+        ]
+    }
+}
