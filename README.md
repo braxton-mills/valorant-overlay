@@ -4,6 +4,8 @@
 This is an overlay for the Riot game VALORANT.
 Big shout out to [modmuss50](http://github.com/modmuss50) for teaching me a lot of the java and javascript.
 
+![Example 1](https://i.imgur.com/fvKVrpd.jpg)
+
 ## How it works
 
 The overlay consists of 3 sections:
