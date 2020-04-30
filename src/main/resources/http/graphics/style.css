@@ -3,6 +3,11 @@
 	src: url("font/valorant.ttf") format("truetype");
 }
 
+@font-face {
+	font-family:"DINNextLTPro-Regular";
+	src: url("font/DINNextLTPro-Regular.ttf") format("truetype");
+}
+
 body {
 	background-image: url("img/top.png");
 	background-repeat: no-repeat;
@@ -101,6 +106,8 @@ body {
 	background-repeat: no-repeat;
 	height:50px;
 	width:50px;
+	min-height:50px;
+	min-width:50px;
 }
 
 .player-name-container{
@@ -126,6 +133,7 @@ body {
 	text-align:right;
 	margin: 0px 0px 5px 0;
 	font-size: 25px;
+	font-family: "DINNextLTPro-Regular";
 }
 
 .player-name-container-right > p{
@@ -133,6 +141,7 @@ body {
 	text-align:left;
 	margin: 0px 0px 5px 0;
 	font-size: 25px;
+	font-family: "DINNextLTPro-Regular";
 }
 
 .red-line{
