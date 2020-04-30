@@ -27,13 +27,16 @@ function updateTeamData(teamName, data) {
     }
 }
 
-
 function setText(id, value) {
     document.getElementById(id).innerHTML = value;
 }
 
 function setImage(id, value) {
-    document.getElementById(id).setAttribute("style", `background-image:url('../logos/${value}');`);
+    if (id.contains("_player_image_")){
+        document.getElementById(id).setAttribute("style", `background-image:url('img/${value}');`);
+    } else {
+        document.getElementById(id).setAttribute("style", `background-image:url('../logos/${value}');`);
+    }
 }
 
 var getJSON = function (url, callback) {
