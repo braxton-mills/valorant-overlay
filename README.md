@@ -43,4 +43,5 @@ This can be added into any broadcast software (e.g. OBS, Xsplit, vMix) as a brow
 2. Export the contents of the zip file into any folder on your computer.
 3. Start the overlay by running the start.bat file (This opens the jar file using the included OpenJDK so that users are not required to have java already installed).
 4. If the backend server has started correctly you should now be able to go to http://localhost:7000/dashboard and http://localhost:7000/graphics.
+
 To add a team logo put a `.png` in the `logos` folder. Then in the dashboard type the name of the `.png` file. Remember data will only update when the "Set" button is pressed.  
