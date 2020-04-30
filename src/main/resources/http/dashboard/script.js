@@ -15,6 +15,9 @@ document.addEventListener('click', function (event) {
 	if (currentID == "set") {
 		submitData()
 	}
+	if (currentID == "swap") {
+		swapAll()
+	}
 });
 
 function choosingCharacter(playerlogoID) {	
@@ -109,4 +112,28 @@ var postJSON = function (url, data ,callback) {
 
 function getPath() {
     return window.location.protocol + "//" + window.location.host;
+}
+
+function swap(type) {
+	var old1 = document.getElementById("team1_" + type).value;
+	var old2 = document.getElementById("team2_" + type).value;
+	document.getElementById("team2_" + type).value = old1;
+	document.getElementById("team1_" + type).value = old2;
+}
+
+function swapImage(player) {
+	var old1 = document.getElementById("team1_player_image_" + player).getAttribute("style");
+	var old2 = document.getElementById("team2_player_image_" + player).getAttribute("style");
+	document.getElementById("team2_player_image_" + player).setAttribute("style", old1);
+	document.getElementById("team1_player_image_" + player).setAttribute("style", old2);
+}
+
+function swapAll() {
+	swap("name");
+	swap("logo");
+	for (let i = 0; i < 5; i++) {
+		swap("player_" + (i+1));
+		swapImage(i+1);
+	}
+
 }
