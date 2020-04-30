@@ -140,6 +140,11 @@ body {
     border-bottom:4px solid rgb(195, 66, 71);
 }
 
+.blue-line{
+	width:50px;
+    border-bottom:4px solid #6bb19c;
+}
+
 .center_vert {
 	position: absolute;
 	top: 50vh;
