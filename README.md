@@ -4,7 +4,7 @@
 This is an overlay for the Riot game VALORANT.
 Big shout out to [modmuss50](http://github.com/modmuss50) for teaching me a lot of the java and javascript.
 
-![Example 1](https://i.imgur.com/fvKVrpd.jpg)
+![Example 1](https://i.imgur.com/J4wtqhp.jpg)
 
 ## How it works
 
@@ -18,7 +18,7 @@ The overlay consists of 3 sections:
 
 The graphics are written in HTML, CSS and Javascript. It can be added into OBS as a simple browser source like most overlays. The graphics are updated by reading a json file every seceond and replacing the data on screen with what is written in the json file.
 
-Here are 2 examples of the graphics: [Example 1](https://i.imgur.com/fvKVrpd.jpg), [Example 2](https://i.imgur.com/3SA9txp.jpg).  
+Here are 2 examples of the graphics: [Example 1](https://i.imgur.com/J4wtqhp.jpg), [Example 2](https://i.imgur.com/eOLh8Mi.jpg).  
 Graphics elements:
 
 - Top Bar (to hide ingame stats such as fps counter, ping and packet loss)
