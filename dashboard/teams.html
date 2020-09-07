@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<style>
+			body {
+				font-family: monospace;
+				background-color: #2f3a4f;
+				margin: 15px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Team 1 and Score</span>
+			</div>
+			<input
+				type="text"
+				aria-label="Team 1"
+				placeholder="Team 1 Name"
+				class="form-control"
+				id="team1"
+			/>
+			<input
+				type="text"
+				aria-label="Score"
+				placeholder="Team 1 Score"
+				class="form-control"
+				id="scoreleft"
+			/>
+		</div>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Team 2 and Score</span>
+			</div>
+			<input
+				type="text"
+				aria-label="Team 2"
+				placeholder="Team 2 Name"
+				class="form-control"
+				id="team2"
+			/>
+			<input
+				type="text"
+				aria-label="Score"
+				placeholder="Team 2 Score"
+				class="form-control"
+				id="scoreright"
+			/>
+		</div>
+		<button onclick="setText()" type="button" class="btn btn-primary">
+			Set Text
+		</button>
+
+		<script>
+			const upNextRep = nodecg.Replicant("upNextRep", {
+				defaultValue: "",
+			});
+			const timerRep = nodecg.Replicant("timerRep", {
+				defaultValue: "00:00",
+			});
+			const upNextText = document.querySelector("#upNextText");
+			const timerText = document.querySelector("#timerText");
+			const team1Rep = nodecg.Replicant("team1Rep", { defaultValue: "" });
+			const team2Rep = nodecg.Replicant("team2Rep", { defaultValue: "" });
+			const scoreleftRep = nodecg.Replicant("scoreleftRep", {
+				defaultValue: "",
+			});
+			const scorerightRep = nodecg.Replicant("scorerightRep", {
+				defaultValue: "",
+			});
+			const team1 = document.querySelector("#team1");
+			const team2 = document.querySelector("#team2");
+			const scoreright = document.querySelector("#scoreright");
+			const scoreleft = document.querySelector("#scoreleft");
+
+			nodecg.log.info("Here's an example of using NodeCG's logging API!");
+
+			function setText() {
+				// upNextRep.value = upNextText.value;
+				// timerRep.value = timerText.value;
+				scoreleftRep.value = scoreright.value;
+				scorerightRep.value = scoreleft.value;
+				team1Rep.value = team2.value;
+				team2Rep.value = team1.value;
+			}
+		</script>
+	</body>
+</html>

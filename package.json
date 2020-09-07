@@ -1,0 +1,43 @@
+{
+  "name": "valorant-overlay",
+  "version": "2.0.0",
+  "description": "This is an overlay for the Riot game VALORANT",
+  "homepage": "https://github.com/fill30/valorant-overlay",
+  "author": {
+    "name": "Josh Fillingham",
+    "url": "https://github.com/fill30/"
+  },
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "Valorant Overlay Teams",
+        "title": "Valorant Overlay Teams",
+        "file": "teams.html",
+        "width": "5",
+        "fullbleed": false,
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "Valorant Overlay Players",
+        "title": "Valorant Overlay Players",
+        "file": "players/index.html",
+        "width": "5",
+        "fullbleed": false,
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "TeamNames/index.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Teams/index.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}

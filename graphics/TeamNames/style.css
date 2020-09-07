@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "DINNextLTPro-Regular";
+	src: url("../font/DINNextLTPro-Regular.ttf") format("truetype");
+}
+
+body {
+	background-image: url("../img/teamscorebackground.png");
+	background-repeat: no-repeat;
+}
+
+.teamright {
+	width: 575px;
+	font-size: 30px;
+	font-family: "DINNextLTPro-Regular";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-moz-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-webkit-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-ms-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	position: absolute;
+	left: 362.522px;
+	top: 91px;
+	z-index: 3;
+}
+
+.teamleft {
+	width: 575px;
+	font-size: 30px;
+	font-family: "DINNextLTPro-Regular";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-moz-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-webkit-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	-ms-transform: matrix(0.65413858160442, 0, 0, 0.65413858160442, 0, 0);
+	position: absolute;
+	right: 362.522px;
+	top: 91px;
+	z-index: 3;
+}
+
+.scoreleft {
+	font-size: 30px;
+	font-family: "DINNextLTPro-Regular";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: right;
+	position: absolute;
+	right: 865.375px;
+	top: 93px;
+	z-index: 3;
+}
+
+.scoreright {
+	font-size: 30px;
+	font-family: "DINNextLTPro-Regular";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: left;
+	position: absolute;
+	left: 865.375px;
+	top: 93px;
+	z-index: 3;
+}

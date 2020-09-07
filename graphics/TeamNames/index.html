@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="scoreleft" id="scoreleft">0</div>
+		<div class="scoreright" id="scoreright">0</div>
+		<div class="teamleft" id="team1">TEAMY LEFT</div>
+		<div class="teamright" id="team2">TEAMY RIGHT</div>
+
+		<script>
+			const team1Rep = nodecg.Replicant("team1Rep", { defaultValue: "" });
+			const team2Rep = nodecg.Replicant("team2Rep", { defaultValue: "" });
+			const scoreleftRep = nodecg.Replicant("scoreleftRep", {
+				defaultValue: "",
+			});
+			const scorerightRep = nodecg.Replicant("scorerightRep", {
+				defaultValue: "",
+			});
+			const scoreleft = document.getElementById("scoreleft");
+			const scoreright = document.getElementById("scoreright");
+			const team1 = document.getElementById("team1");
+			const team2 = document.getElementById("team2");
+
+			team1Rep.on("change", (newValue, oldValue) => {
+				team1.innerHTML = newValue.toUpperCase();
+				nodecg.log.info(
+					`team1Rep changed from ${oldValue} to ${newValue}`
+				);
+			});
+			team2Rep.on("change", (newValue, oldValue) => {
+				team2.innerHTML = newValue.toUpperCase();
+				nodecg.log.info(
+					`team2Rep changed from ${oldValue} to ${newValue}`
+				);
+			});
+			scoreleftRep.on("change", (newValue, oldValue) => {
+				scoreleft.innerHTML = newValue.toUpperCase();
+				nodecg.log.info(
+					`scoreleftRep changed from ${oldValue} to ${newValue}`
+				);
+			});
+			scorerightRep.on("change", (newValue, oldValue) => {
+				scoreright.innerHTML = newValue.toUpperCase();
+				nodecg.log.info(
+					`scorerightRep changed from ${oldValue} to ${newValue}`
+				);
+			});
+		</script>
+	</body>
+</html>
