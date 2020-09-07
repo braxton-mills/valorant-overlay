@@ -2,6 +2,8 @@
 
 [![https://github.com/fill30/valorant-overlay/blob/master/LICENSE](https://img.shields.io/github/license/fill30/valorant-overlay)](https://github.com/fill30/valorant-overlay/blob/master/LICENSE)  
 This is an overlay for the Riot game VALORANT.
+This branch is the java version of the overlay which uses java to host a webserver which allows the dashboard and graphics to communicate using http requests.
+The master branch uses a nodejs framework called nodecg. This is much better for writing broadcast graphics systems.
 Big shout out to [modmuss50](http://github.com/modmuss50) for teaching me a lot of the java and javascript.
 
 ![Example 1](https://i.imgur.com/J4wtqhp.jpg)
@@ -10,9 +12,9 @@ Big shout out to [modmuss50](http://github.com/modmuss50) for teaching me a lot 
 
 The overlay consists of 3 sections:
 
-- Graphics
-- Dashboard
-- Webserver (backend)
+- Graphics (html, js, css)
+- Dashboard (html, js, css)
+- Webserver (java)
 
 #### Graphics
 
