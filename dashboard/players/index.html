@@ -1,157 +1,122 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="style.css" />
-		<script type="text/javascript" src="script.js"></script>
-		<title>Overlay Control Panel</title>
-	</head>
-	<body>
-		<div class="flex-container">
-			<div
-				class="neutral"
-				id="character_Breach"
-				style="background-image: url('img/Breach.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Brimstone"
-				style="background-image: url('img/Brimstone.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Cypher"
-				style="background-image: url('img/Cypher.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Jett"
-				style="background-image: url('img/Jett.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Omen"
-				style="background-image: url('img/Omen.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Phoenix"
-				style="background-image: url('img/Phoenix.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Raze"
-				style="background-image: url('img/Raze.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Sage"
-				style="background-image: url('img/Sage.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Sova"
-				style="background-image: url('img/Sova.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Viper"
-				style="background-image: url('img/Viper.png');"
-			></div>
-			<div
-				class="neutral"
-				id="character_Reyna"
-				style="background-image: url('img/Reyna.png');"
-			></div>
-		</div>
-		<div class="flex-container">
-			<div class="team1" id="team1_player_image_1">P1</div>
-			<div class="team1" id="team1_player_image_2">P2</div>
-			<div class="team1" id="team1_player_image_3">P3</div>
-			<div class="team1" id="team1_player_image_4">P4</div>
-			<div class="team1" id="team1_player_image_5">P5</div>
-			<div class="team2" id="team2_player_image_1">P1</div>
-			<div class="team2" id="team2_player_image_2">P2</div>
-			<div class="team2" id="team2_player_image_3">P3</div>
-			<div class="team2" id="team2_player_image_4">P4</div>
-			<div class="team2" id="team2_player_image_5">P5</div>
-		</div>
-		<div class="flex-container">
-			<label>P1</label>
-			<input
-				type="text"
-				placeholder="Team 1 Player 1"
-				id="team1_player_1"
-			/>
-			<input
-				type="text"
-				placeholder="Team 2 Player 1"
-				id="team2_player_1"
-			/>
-			<label>P1</label>
-		</div>
-		<div class="flex-container">
-			<label>P2</label>
-			<input
-				type="text"
-				placeholder="Team 1 Player 2"
-				id="team1_player_2"
-			/>
-			<input
-				type="text"
-				placeholder="Team 2 Player 2"
-				id="team2_player_2"
-			/>
-			<label>P2</label>
-		</div>
-		<div class="flex-container">
-			<label>P3</label>
-			<input
-				type="text"
-				placeholder="Team 1 Player 3"
-				id="team1_player_3"
-			/>
-			<input
-				type="text"
-				placeholder="Team 2 Player 3"
-				id="team2_player_3"
-			/>
-			<label>P3</label>
-		</div>
-		<div class="flex-container">
-			<label>P4</label>
-			<input
-				type="text"
-				placeholder="Team 1 Player 4"
-				id="team1_player_4"
-			/>
-			<input
-				type="text"
-				placeholder="Team 2 Player 4"
-				id="team2_player_4"
-			/>
-			<label>P4</label>
-		</div>
-		<div class="flex-container">
-			<label>P5</label>
-			<input
-				type="text"
-				placeholder="Team 1 Player 5"
-				id="team1_player_5"
-			/>
-			<input
-				type="text"
-				placeholder="Team 2 Player 5"
-				id="team2_player_5"
-			/>
-			<label>P5</label>
-		</div>
-		<div class="flex-container">
-			<p id="swap">Swap</p>
-			<p id="set">Set</p>
-		</div>
-		<div class="flex-container">
-			<p id="first-half">First Half (Blue - Red)</p>
-			<p id="second-half">Second Half (Red - Blue)</p>
-		</div>
-	</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Overlay Control Panel</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div
+        class="neutral"
+        id="character_Breach"
+        style="background-image: url('img/Breach.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Brimstone"
+        style="background-image: url('img/Brimstone.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Cypher"
+        style="background-image: url('img/Cypher.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Jett"
+        style="background-image: url('img/Jett.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Omen"
+        style="background-image: url('img/Omen.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Phoenix"
+        style="background-image: url('img/Phoenix.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Raze"
+        style="background-image: url('img/Raze.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Sage"
+        style="background-image: url('img/Sage.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Sova"
+        style="background-image: url('img/Sova.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Viper"
+        style="background-image: url('img/Viper.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Reyna"
+        style="background-image: url('img/Reyna.png')"
+      ></div>
+      <div
+        class="neutral"
+        id="character_Killjoy"
+        style="background-image: url('img/Killjoy.png')"
+      ></div>
+    </div>
+    <div class="flex-container">
+      <div class="team1" id="team1_player_image_1">P1</div>
+      <div class="team1" id="team1_player_image_2">P2</div>
+      <div class="team1" id="team1_player_image_3">P3</div>
+      <div class="team1" id="team1_player_image_4">P4</div>
+      <div class="team1" id="team1_player_image_5">P5</div>
+      <div class="team2" id="team2_player_image_1">P1</div>
+      <div class="team2" id="team2_player_image_2">P2</div>
+      <div class="team2" id="team2_player_image_3">P3</div>
+      <div class="team2" id="team2_player_image_4">P4</div>
+      <div class="team2" id="team2_player_image_5">P5</div>
+    </div>
+    <div class="flex-container">
+      <label>P1</label>
+      <input type="text" placeholder="Team 1 Player 1" id="team1_player_1" />
+      <input type="text" placeholder="Team 2 Player 1" id="team2_player_1" />
+      <label>P1</label>
+    </div>
+    <div class="flex-container">
+      <label>P2</label>
+      <input type="text" placeholder="Team 1 Player 2" id="team1_player_2" />
+      <input type="text" placeholder="Team 2 Player 2" id="team2_player_2" />
+      <label>P2</label>
+    </div>
+    <div class="flex-container">
+      <label>P3</label>
+      <input type="text" placeholder="Team 1 Player 3" id="team1_player_3" />
+      <input type="text" placeholder="Team 2 Player 3" id="team2_player_3" />
+      <label>P3</label>
+    </div>
+    <div class="flex-container">
+      <label>P4</label>
+      <input type="text" placeholder="Team 1 Player 4" id="team1_player_4" />
+      <input type="text" placeholder="Team 2 Player 4" id="team2_player_4" />
+      <label>P4</label>
+    </div>
+    <div class="flex-container">
+      <label>P5</label>
+      <input type="text" placeholder="Team 1 Player 5" id="team1_player_5" />
+      <input type="text" placeholder="Team 2 Player 5" id="team2_player_5" />
+      <label>P5</label>
+    </div>
+    <div class="flex-container">
+      <p id="swap">Swap</p>
+      <p id="set">Set</p>
+    </div>
+    <div class="flex-container">
+      <p id="first-half">First Half (Blue - Red)</p>
+      <p id="second-half">Second Half (Red - Blue)</p>
+    </div>
+  </body>
 </html>
